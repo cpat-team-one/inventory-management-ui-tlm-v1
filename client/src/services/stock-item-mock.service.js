@@ -1,0 +1,35 @@
+import timer from '../util/timer'
+
+export class StockItemMockService { 
+  async listStockItems() { 
+
+    await timer
+
+    return [
+      {
+        "name": "Item 1",
+        "description": "The first item",
+        "stock": 10,
+        "unitPrice": 100.0,
+        "picture": "test",
+        "manufacturer": "Microsoft",
+      },
+      {
+        "name": "Item 2",
+        "description": "The second item",
+        "stock": 15,
+        "unitPrice": 120.5,
+        "picture": "test1",
+        "manufacturer": "Apple",
+      },
+      {
+        "name": "Item 3",
+        "description": "The third item",
+        "stock": 20,
+        "unitPrice": 75.5,
+        "picture": "test1",
+        "manufacturer": "Sony",
+      }
+    ]; 
+  }
+}
