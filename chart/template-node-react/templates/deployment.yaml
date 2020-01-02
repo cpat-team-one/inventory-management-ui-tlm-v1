@@ -47,6 +47,8 @@ spec:
               value: {{ include "starter-kit-chart.protocols" . }}
             - name: API_HOST
               value: {{ .Values.apiHost | quote }}
+            - name: SERVICE_URL
+              value: {{ .Values.serviceUrl | quote }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
