@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import UIShell from "./components/UIShell";
 import "./App.scss"; 
-// import {StockItemMockService} from './services/stock-item-mock.service'
 
 import { StockItemService } from './services/stock-item.service'
 
